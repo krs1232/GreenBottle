@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>GreenBottle | History</title>
+    
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>  
+  <!-- Start header section -->
+  <header id="aa-header">
+      <!-- start header top  -->
+      <div class="aa-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-top-area">
+                <!-- start header top left -->
+                <div class="aa-header-top-left">
+                <!-- / header top left -->
+                <div class="aa-header-top-right">
+                  <ul class="aa-head-top-nav-right">
+  
+                    <li><a href="help">Help</a></li>
+                    <li><a href="login">Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header top  -->
+  
+      <!-- start header bottom  -->
+      <div class="aa-header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-bottom-area">
+                <!-- logo  -->
+                <div class="aa-logo">
+                  <!-- Text based logo -->
+                  <a href="main">
+                    <span class="fa fa-pagelines"></span>
+                    <p>Green<strong>Bottle</strong> <span>Return bottles and get money!</span></p>
+                  </a>
+                  <!-- img based logo -->
+                  <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                </div>  
+                     <!-- cart box -->
+                     <div class="aa-cartbox">
+                        <a class="aa-cart-link" href="qrCode">
+                          <span class="fa fa-qrcode"></span>
+                          <span class="aa-cart-title">CODE</span>
+                          <span class="aa-cart-notify">QR/SCAN</span>
+                        </a>
+                     </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header bottom  -->
+    </header>
+    <!-- / header section -->
+    <!-- menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="menu-area">
+          <!-- Navbar -->
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>          
+            </div>
+            <div class="navbar-collapse collapse">
+              <!-- Left nav -->
+              <ul class="nav navbar-nav">
+                <li><a href="main">Home</a></li>
+                <li><a href="collect">회수내역</a></li>            
+                <li><a href="location">회수기위치</a></li>
+                <li><a href="help">도움말</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div> 
+        </div>
+      </div>
+    </section>
+    <!-- / menu -->  
+
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="col-md-12">
+          <br>
+          <h3>회수내역</h3>
+              History
+      </div>
+    </div>
+    </section>  
+
+ <!-- Cart view section -->
+ <section id="cart-view">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="cart-view-area">
+           <div class="cart-view-table">
+             <form action="">
+               <div class="table-responsive" id = "tableList">
+                </div>
+			 </form>
+			 <div class="container"></div>
+			 <div class="container"></div>
+			 <div class="container"></div>
+             <!-- Cart Total view -->
+             <div class="cart-view-total">
+				 <table class="table">
+					 <tr>
+						 <td>
+							<h4>총 금액   </h4>
+						 </td>
+						 <td >
+							<h4 id="totalCost"></h4>
+						 </td>
+						 <td><h4>원</h4></td>
+					 </tr>
+				 </table>
+			   
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- / Cart view section -->
+
+
+
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>  
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+    <!-- To Slider JS -->
+    <script src="js/sequence.js"></script>
+    <script src="js/sequence-theme.modern-slide-in.js"></script>  
+    <!-- Product view slider -->
+    <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+    <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <!-- Price picker slider -->
+    <script type="text/javascript" src="js/nouislider.js"></script>
+    <!-- Custom js -->
+    <script src="js/custom.js"></script> 
+
+
+
+    <script>
+		var jwtToken = sessionStorage.getItem('jwtToken')
+        fetchUserData();
+        function fetchUserData(){
+            $.ajax({
+                url:'http://localhost:3000/collect',
+                type : 'POST',
+                headers : {
+                    'x-access-token' : jwtToken
+                },
+                success:function(data){
+					var total = 0;
+                    for(var i=0; i < data.length; i++){
+						var date = data[i].tDate.slice(0,10);
+						var soju = data[i].tSoju;
+						var beer = data[i].tBeer;
+						var cost = (soju * 100) + (beer * 130);
+						total += cost;
+
+                        $("#tableList").append(
+                            '<table class="table">'+
+								'<tr>'+
+									'<td colspan="6"><h2>'+date+'</h2></td>'+	
+									'<td rowspan="5" colspan="2"><h1>'+cost+'원</h1></td>'+
+								'</tr>'+
+								'<tr>'+
+									'<td>맥주 '+beer+'병</td>'+
+									'<td>소주 '+soju+'병</td>'+
+								'</tr>'+
+						'</table>'
+                        )
+					}   
+					$("#totalCost").append(total); 
+                }
+            })
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>GreenBottle | Send</title>
+    
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>  
+  <!-- Start header section -->
+  <header id="aa-header">
+      <!-- start header top  -->
+      <div class="aa-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-top-area">
+                <!-- start header top left -->
+                <div class="aa-header-top-left">
+                <!-- / header top left -->
+                <div class="aa-header-top-right">
+                  <ul class="aa-head-top-nav-right">
+  
+                    <li><a href="help">Help</a></li>
+                    <li><a href="login">Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header top  -->
+  
+      <!-- start header bottom  -->
+      <div class="aa-header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-bottom-area">
+                <!-- logo  -->
+                <div class="aa-logo">
+                  <!-- Text based logo -->
+                  <a href="main">
+                    <span class="fa fa-pagelines"></span>
+                    <p>Green<strong>Bottle</strong> <span>Return bottles and get money!</span></p>
+                  </a>
+                  <!-- img based logo -->
+                  <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                </div>  
+                     <!-- cart box -->
+                     <div class="aa-cartbox">
+                        <a class="aa-cart-link" href="qrCode">
+                          <span class="fa fa-qrcode"></span>
+                          <span class="aa-cart-title">CODE</span>
+                          <span class="aa-cart-notify">QR/SCAN</span>
+                        </a>
+                     </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header bottom  -->
+    </header>
+    <!-- / header section -->
+    <!-- menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="menu-area">
+          <!-- Navbar -->
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>          
+            </div>
+            <div class="navbar-collapse collapse">
+              <!-- Left nav -->
+              <ul class="nav navbar-nav">
+                <li><a href="main">Home</a></li>
+                <li><a href="collect">회수내역</a></li>            
+                <li><a href="location">회수기위치</a></li>
+                <li><a href="help">도움말</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div> 
+        </div>
+      </div>
+    </section>
+    <!-- / menu -->  
+
+  <!-- / menu -->  
+ 
+
+  
+  <!-- Subscribe section -->
+  <section id="aa-subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <p></p>
+            <img id="bankImg"  alt="bank img" width="100" height="100"><br><br>
+            <h2 id='bankName' style='line-height: 80%;'></h2>
+            <p id='accountNum'></p><br><br><br>
+            
+            <h1 id='totalCost'></h1>
+            <h1 id='balanceText'></h1>
+            <br><br>
+           
+            <button type="button" id="OkBtn" class="aa-browse-btn">OK</button>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Subscribe section -->
+
+    
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+  <!-- To Slider JS -->
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>  
+  <!-- Product view slider -->
+  <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+
+  <script>
+      function getQueryStringObject() {
+        var a = window.location.search.substr(1).split('&');
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i) {
+            var p = a[i].split('=', 2);
+            if (p.length == 1)
+                b[p[0]] = "";
+            else
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+        }
+
+        var qs = getQueryStringObject();
+        
+        //alert(qs.fin_use_num);
+        var jwtToken = sessionStorage.getItem('jwtToken');
+        $.ajax({
+            url:'http://localhost:3000/balance',
+            type : 'POST',
+            headers : {
+                'x-access-token' : jwtToken
+            },
+            data : {
+                fin_use_num : qs.fin_use_num,
+                bankName : qs.bankName,
+                account_num_masked : qs.account
+            },
+            success:function(data){
+                console.log(data);
+                $("#bankName").text(qs.bankName);
+                $("#accountNum").text(qs.account);
+                $("#balanceText").text("송금 후 잔액   "+data.balance_amt+"원");
+                var name = qs.bankName;
+                
+                if(name == '수협은행'){
+                    $("#bankImg").attr('src', 'img/bank/ShBank.png');
+                }
+                else if(name=='SC은행'){
+                  $("#bankImg").attr('src', 'img/bank/SCbank.png');
+                }
+                else if(name=='오픈뱅킹'){
+                  $("#bankImg").attr('src', 'img/bank/openBank.jpg');
+                }
+                else if(name=='국민은행'){
+                  $("#bankImg").attr('src', 'img/bank/KbBank.png');
+                }
+                else if(name=='IBK기업은행'){
+                  $("#bankImg").attr('src', 'img/bank/IBKbank.png');
+                }
+                else {
+                }
+            }
+        })
+
+        var jwtToken = sessionStorage.getItem('jwtToken')
+        fetchUserData();
+        function fetchUserData(){
+            $.ajax({
+                url:'http://localhost:3000/lasttran',
+                type : 'POST',
+                headers : {
+                    'x-access-token' : jwtToken
+                },
+                success:function(data){
+                    console.log(data);
+				    	      var total = 0;
+						        var soju = data[0].tSoju;
+						        var beer = data[0].tBeer;
+						        var cost = (soju * 100) + (beer * 130);
+						        total += cost;
+					$("#totalCost").text("송금 금액 "+total + "원"); 
+                }
+            })
+        }
+
+        $("#OkBtn").click(function(){
+        window.location = "/collect"
+      })
+  </script>
+
+
+  </body>
+</html>

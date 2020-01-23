@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>GreenBottle | AccountList</title>
+    
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>  
+  <!-- Start header section -->
+  <header id="aa-header">
+      <!-- start header top  -->
+      <div class="aa-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-top-area">
+                <!-- start header top left -->
+                <div class="aa-header-top-left">
+                <!-- / header top left -->
+                <div class="aa-header-top-right">
+                  <ul class="aa-head-top-nav-right">
+  
+                    <li><a href="help">Help</a></li>
+                    <li><a href="login">Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header top  -->
+  
+      <!-- start header bottom  -->
+      <div class="aa-header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-bottom-area">
+                <!-- logo  -->
+                <div class="aa-logo">
+                  <!-- Text based logo -->
+                  <a href="index.html">
+                    <span class="fa fa-pagelines"></span>
+                    <p>Green<strong>Bottle</strong> <span>Return bottles and get money!</span></p>
+                  </a>
+                  <!-- img based logo -->
+                  <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                </div>  
+                     <!-- cart box -->
+                     <div class="aa-cartbox">
+                        <a class="aa-cart-link" href="#">
+                          <span class="fa fa-qrcode"></span>
+                          <span class="aa-cart-title">CODE</span>
+                          <span class="aa-cart-notify">QR/SCAN</span>
+                        </a>
+                     </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header bottom  -->
+    </header>
+    <!-- / header section -->
+    <!-- menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="menu-area">
+          <!-- Navbar -->
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>          
+            </div>
+            <div class="navbar-collapse collapse">
+              <!-- Left nav -->
+              <ul class="nav navbar-nav">
+                <li><a href="main">Home</a></li>
+                <li><a href="collect">회수내역</a></li>            
+                <li><a href="location">회수기위치</a></li>
+                <li><a href="help">도움말</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div> 
+        </div>
+      </div>
+    </section>
+    <!-- / menu -->  
+
+  <section id="aa-subscribe">
+  <div class="container">
+    <div class="col-md-12">
+        <br>
+        <h3>입금계좌를 선택해주세요</h3>
+        Please select the account
+  </div>
+  </div>
+  </section>
+
+
+ <!-- bankaccount view section -->
+ <section id="cart-view" >
+   <div class="container" style="background-color: #ffffff;">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="cart-view-area">
+           <div class="cart-view-table aa-wishlist-table" style="background-color: white; ">
+             <form action="">
+               <div class="table-responsive" >
+                  <table class="table">
+                    <!-- <thead>
+                        <td>은행로고</td>
+                        <td>은행이름</td>
+                        <td>은행계좌</td>
+                        <td>은행핀테크번호</td>
+                    </thead> -->
+                    <tbody id='bankTable' >
+                     
+                    </tbody>
+                  </table>
+                </div>
+             </form>             
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- / Cart view section -->
+
+ <section id="aa-subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-subscribe-area">
+          <form action="" >
+            
+            <button type="button" id="sendButton" class="aa-browse-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+  <!-- To Slider JS -->
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>  
+  <!-- Product view slider -->
+  <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+  
+  <script>
+    //table에 정보 뿌려주기
+    //login에서 세션 스토리지에 저장한 jwt토큰을 가져옴
+    var jwtToken = sessionStorage.getItem('jwtToken')
+    var fintech_use_num
+    var bank_name
+    var account_num_masked
+    fetchUserData();
+    function fetchUserData(){
+        $.ajax({
+            url:'http://localhost:3000/accountList',
+            type : 'POST',
+            headers : {
+                //가져온 jwt토큰을 서버에 넘겨줌
+                'x-access-token' : jwtToken
+            },
+            success:function(data){
+                console.log(data.res_list);
+                //가져온 res_list 크기만큼 데이터
+                for(var i=0; i < data.res_list.length; i++){
+                  var imgSrc = "";
+                  console.log(data.res_list[i].bank_code_std);
+                  if(data.res_list[i].bank_code_std=='097'){
+                    imgSrc = '<img src="img/bank/openBank.jpg" alt="img">'
+                  }
+                  else if(data.res_list[i].bank_code_std=='003'){
+                    imgSrc = '<img src="img/bank/IBKbank.png" alt="img">'
+                  }
+                  else if(data.res_list[i].bank_code_std=='011'){
+                    imgSrc = '<img src="img/bank/NHbank.png" alt="img">'
+                  }
+                  else if(data.res_list[i].bank_code_std=='007'){
+                    imgSrc = '<img src="img/bank/ShBank.png" alt="img">'
+                  }
+                  else if(data.res_list[i].bank_code_std=='023'){
+                    imgSrc = '<img src="img/bank/SCbank.png" alt="img">'
+                  }
+                  else if(data.res_list[i].bank_code_std=='004'){
+                    imgSrc = '<img src="img/bank/KbBank.jpg" alt="img">'
+                  }
+                  else{
+                    imgSrc = '<img src="img/man/polo-shirt-1.png" alt="img">';
+                  }
+                  fintech_use_num=data.res_list[i].fintech_use_num;
+                  console.log(imgSrc);
+                  $("#bankTable").append(
+                  '<tr id="row"+i>'+
+                  '<td>'+imgSrc+'</td>'+
+                  '<td>'+data.res_list[i].bank_name+'</td>'+
+                  '<td>'+data.res_list[i].account_num_masked+'</td>'+
+                  //'<td>'+data.res_list[i].fintech_use_num+'</td>'+
+                  '</tr>'
+                  )
+                }    
+            }
+        })
+    }
+
+    //행이 눌릴 때
+      $(document).on('click', '#bankTable tr', function(){
+      var tdArray = new Array();
+      var tr = $(this);
+      var td = $(this).children();
+      // tr.text()는 클릭된 Row 즉 tr에 있는 모든 값을 가져온다.
+      console.log("클릭한 Row의 모든 데이터 : "+tr.text());
+      //tr에 있는 모든 데이터
+      // 반복문을 이용해서 배열에 값을 담아 사용할 수 도 있다.
+      td.each(function(i){
+        tdArray.push(td.eq(i).text());
+      });
+      //모든 테이블 색 초기화
+      $('#bankTable').each(function(i){
+        $('#bankTable tr').css( "background-color", "white" );
+      })
+      //선택 tr 색 변경
+      $(this).css( "background-color", "#D1EF9C" );
+      console.log("배열에 담긴 값 : "+tdArray[3]);
+      //은행이름과 핀테크 번호 가져오기
+      bank_name=tdArray[1];
+      account_num_masked=tdArray[2];
+      //fintech_use_num=tdArray[3];
+      
+    })
+    //send버튼 눌릴때
+    $("#sendButton").click(function(){
+        console.log("핀테크 "+ fintech_use_num);
+        if(bank_name!=null){
+          $.ajax({
+                url: 'http://localhost:3000/sendMoney',
+                type: 'POST',
+                headers: {
+                    'x-access-token': sessionStorage.getItem('jwtToken')
+                },
+                data: {
+                      'x-access-token' : jwtToken
+                      
+                },
+                success: function (data) {
+                    console.log("결제DATA "+data);
+                    if(data == 1||'A0009'){
+                        alert('결제가 완료되었습니다.');
+                        window.location.href = "/remittance?fin_use_num="+fintech_use_num+'&bankName='+bank_name+'&account='+account_num_masked;
+                    }
+                    else {
+                        alert('결제가 미승인되었습니다')
+                        window.location.href = "/main";
+                    }
+                }
+            })
+        //송금완료시에                            
+        }
+        else{
+          alert("계좌를 선택해주세요");
+        }
+      })
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>GreenBottle | Bottle Count</title> 
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">    
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style>
+      th, td {
+        padding: 10px;
+        border : none;
+      }
+    </style>
+  </head>
+  <body>  
+<!-- Start header section -->
+<header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-top-area">
+              <!-- start header top left -->
+              <div class="aa-header-top-left">
+              <!-- / header top left -->
+              <div class="aa-header-top-right">
+                <ul class="aa-head-top-nav-right">
+
+                  <li><a href="help">Help</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header top  -->
+
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="main">
+                  <span class="fa fa-pagelines"></span>
+                  <p>Green<strong>Bottle</strong> <span>Return bottles and get money!</span></p>
+                </a>
+                <!-- img based logo -->
+                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+              </div>  
+                   <!-- qr box -->
+                   <div class="aa-cartbox">
+                      <a class="aa-cart-link" href="qrCode">
+                        <span class="fa fa-qrcode"></span>
+                        <span class="aa-cart-title">CODE</span>
+                        <span class="aa-cart-notify">QR/SCAN</span>
+                      </a>
+                   </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- / header section -->
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>          
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="main">Home</a></li>
+              <li><a href="collect">회수내역</a></li>            
+              <li><a href="location">회수기위치</a></li>
+              <li><a href="help">도움말</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div> 
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->  
+  <section id="aa-subscribe">
+  <div class="container">
+    <div class="col-md-12">
+        <h3>병을 올려두신 후, <br>종류에 맞게 개수를 입력하세요</h3>
+        Please place the bottles and select the number according to the type.
+  </div>
+  </div>
+  </section>
+ 
+  <section id="cart-view">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cart-view-area" style="background-color:white;">
+            <div class="cart-view-table aa-wishlist-table">
+              <form action="">
+                <div class="table-responsive" style="background-color:white;">
+                   <table class="table">
+                     <tbody>
+                       <tr>
+                         <td><img src="img/img_soju.png" alt="img">
+                         <a class="aa-cart-title" style="font-weight: bold;">소주(Soju)</a></td>
+                         <td><button type="button" id="countDownBtn1" class="aa-browse-btn">-</button type="button"></td>
+                         <td class="sojuVal1" style="font-weight: bold;">0</td>
+                         <td><button type="button" id="countUpBtn1" class="aa-browse-btn">+</button></td>
+                       </tr>
+                       <tr>
+                         <td><img src="img/img_beer.png" alt="img">
+                         <a class="aa-cart-title" style="font-weight: bold;">맥주(Beer)</a></td>
+                         <td><button type="button" id="countDownBtn2" class="aa-browse-btn">-</button type="button"></td>
+                         <td class="beerVal1" style="font-weight: bold;">0</td>
+                         <td><button type="button" id="countUpBtn2" class="aa-browse-btn up2">+</button type="button"></td>
+                       </tr>
+                       </tbody>
+                   </table>
+                 </div>
+              </form>   
+ 
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-12">        
+                     <div class="table-responsive">
+                       <h3>합계(Total)</h3>
+                       <table class="table">
+                         <tbody>
+                           <tr>
+                             <td><a class="aa-cart-title" style="font-weight: bold;">소주(Soju)</a></td>
+                             <td><a class="aa-cart-title sojuVal2" href="#">x 0개</a></td>
+                             <td id="sojuCoin">0₩</td>
+                           </tr>
+                           <tr>
+                             <td><a class="aa-cart-title" style="font-weight: bold;">맥주(Beer)</a>
+                             <td><a class="aa-cart-title beerVal2" href="#">x 0개</a></td>
+                             <td id="beerCoin">0₩</td>
+                           </tr>      
+                           <tr>
+                             <td><a class="aa-cart-title" style="font-weight: bold;">합계(Total)</a></td>
+                             <td></td>
+                             <td id="totalSum" style="font-weight: bold;">0₩</td>
+                           </tr>              
+                           </tbody>
+                       </table>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <div class="aa-prod-view-bottom text-center">
+     <button type="button" class="aa-browse-btn btn-space aa-cart-link">QR코드생성</button>
+ </div>
+ <br><br>
+ 
+  <!-- footer -->  
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+  <!-- To Slider JS -->
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>  
+  <!-- Product view slider -->
+  <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+  </body>
+
+  <script>
+    var sojuCount = 0;
+    var sojuMoney = 1;
+    var beerCount = 0;
+    var beerMoney = 1;
+    var total = 0;
+    // 소주 병 개수 증가 및 계산
+    $('#countUpBtn1').click(function() {
+      sojuCount += 1;
+      sojuMoney = sojuCount * 100;
+      if (beerMoney == 1) 
+        beerMoney = 0;
+      total = sojuMoney + beerMoney;
+      $('.sojuVal1').html(sojuCount);
+      $('.sojuVal2').html('x'+ sojuCount + '개');
+      $('#sojuCoin').html(sojuMoney + '₩');
+      $('#totalSum').html(total +'₩');
+    });
+
+    // 소주 병 개수 감소 및 계산
+    $('#countDownBtn1').click(function() {
+      if (sojuCount > 0) {
+        sojuCount -= 1;
+        sojuMoney = sojuCount * 100;
+        if (beerMoney == 1) 
+          beerMoney = 0;
+        total = sojuMoney + beerMoney; 
+        $('.sojuVal1').html(sojuCount);
+        $('.sojuVal2').html('x'+ sojuCount+'개');
+        $('#sojuCoin').html(sojuMoney + '₩');
+        $('#totalSum').html(total + '₩');
+      }  
+    });
+
+    // 맥주 병 개수 증가 및 계산
+    $('#countUpBtn2').click(function() {
+      beerCount += 1;
+      beerMoney = beerCount * 130;
+      if (sojuMoney == 1) 
+        sojuMoney = 0;
+      $('.beerVal1').html(beerCount);
+      $('.beerVal2').html('x'+ beerCount+'개');
+      $('#beerCoin').html(beerMoney + '₩');
+      $('#totalSum').html(sojuMoney + beerMoney + '₩');
+    });
+
+    // 맥주 병 개수 감소 및 계산
+    $('#countDownBtn2').click(function() {
+      if (beerCount > 0) {
+        beerCount -= 1;
+        beerMoney = beerCount * 130;
+        if (sojuMoney == 1) 
+          sojuMoney = 0;
+        $('.beerVal1').html(beerCount);
+        $('.beerVal2').html('x'+ beerCount + '개');
+        $('#beerCoin').html(beerMoney + '₩');
+        $('#totalSum').html(sojuMoney + beerMoney + '₩');
+      }
+    });
+    
+    //qr버튼 눌렀을때
+    $('.aa-cart-link').click(function() { 
+      var count1 = $('.sojuVal1').html();
+      var count2 = $('.beerVal1').html();
+      var totalCount = Number(count1) + Number(count2);
+      if (count1 == 0 && count2 == 0) {
+        alert('공병의 개수를 입력해주세요!');
+      } else if (totalCount > 30) {
+        alert('하루 반납할 수 있는 공병의 개수를 초과했습니다!');
+      } else {
+          $.ajax({
+            url:'http://localhost:3000/qrCode',
+            type : 'POST',
+            dataType : 'JSON',
+            data : { 
+                     sojuBottle : count1,
+                     beerBottle : count2
+                   },
+            success:function(data){
+              location.href = "http://localhost:3000/qrCode?sojuBottle=" + data.sojuBottle + "&beerBottle=" + data.beerBottle;
+            }
+        })
+      }
+    });
+
+  </script>
+</html>

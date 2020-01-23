@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>GreenBottle | Signup</title>
+    
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  
+  </head>
+  <body> 
+
+  <!-- Start header section -->
+  <header id="aa-header">
+      <!-- start header top  -->
+      <div class="aa-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-top-area">
+                <!-- start header top left -->
+                <div class="aa-header-top-left">
+                <!-- / header top left -->
+                <div class="aa-header-top-right">
+                  <ul class="aa-head-top-nav-right">
+                    <li><a href="help">Help</a></li>
+                    <li><a href="login">Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header top  -->
+  
+      <!-- start header bottom  -->
+      <div class="aa-header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-bottom-area">
+                <!-- logo  -->
+                <div class="aa-logo">
+                  <!-- Text based logo -->
+                  <a href="main">
+                    <span class="fa fa-pagelines"></span>
+                    <p>Green<strong>Bottle</strong> <span>Return bottles and get money!</span></p>
+                  </a>
+                  <!-- img based logo -->
+                  <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                </div>  
+                     <!-- cart box -->
+                     <div class="aa-cartbox">
+                        <a class="aa-cart-link" href="qrCode">
+                          <span class="fa fa-qrcode"></span>
+                          <span class="aa-cart-title">CODE</span>
+                          <span class="aa-cart-notify">QR/SCAN</span>
+                        </a>
+                     </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / header bottom  -->
+    </header>
+    <!-- / header section -->
+    <!-- menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="menu-area">
+          <!-- Navbar -->
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>          
+            </div>
+            <div class="navbar-collapse collapse">
+              <!-- Left nav -->
+              <ul class="nav navbar-nav">
+                <li><a href="main">Home</a></li>
+                <li><a href="collect">회수내역</a></li>            
+                <li><a href="location">회수기위치</a></li>
+                <li><a href="help">도움말</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div> 
+        </div>
+      </div>
+    </section>
+    <!-- / menu -->  
+
+ 
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+   
+    <div class="aa-catg-head-banner-area">
+     <div class="container">
+      <div class="aa-catg-head-banner-content">
+        <h2>REGISTER</h2>
+      </div>
+     </div>
+   </div>
+  </section>
+  <!-- / catg header banner section -->
+
+ <!-- Cart view section -->
+ <section id="aa-myaccount">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+        <div class="aa-myaccount-area">         
+            <div class="row">
+				<div class="col-md-6">
+				  <div class="aa-myaccount-register">                 
+				   <h4>Register</h4>
+				   <form action="" class="aa-login-form">
+           <br>
+					  <div class="container"></div> 
+					  <label for="">User ID<span>*</span></label>
+					  <input type="text" placeholder="User ID" id = "userId">
+					  <label for="">Name<span>*</span></label>
+					  <input type="text" placeholder="Name" id = "userName">
+					  <label for="">Password<span>*</span></label>
+					  <input type="password" placeholder="Password" id = "userPassword">
+					  <button type="button" class="aa-browse-btn" id="authBtn">본인인증</button> 
+					  <button type="button" class="aa-browse-btn" id="signupBtn">회원가입</button>
+					  <h5 id="accessToken"></h5>
+					  <h5 id="refreshToken"></h5>
+					  <h5 id="userseqno"></h5>     
+					</form>
+				  </div>
+				</div>
+            </div>          
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- / Cart view section -->
+
+    
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+  <!-- To Slider JS -->
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>  
+  <!-- Product view slider -->
+  <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+  
+
+    
+    <script>
+
+        $("#signupBtn").click(function() {
+            var name = $("#userName").val();
+            var id = $("#userId").val();
+            var password = $("#userPassword").val();
+            var accessToken = $("#accessToken").val();
+            var refreshToken = $("#refreshToken").val();
+            var userseqNo = $("#userseqno").val();
+
+            $.ajax({
+                url:'http://localhost:3000/user',
+                type : 'POST',
+                data : {
+                    name : name,
+                    password : password,
+                    id : id,
+                    accessToken : accessToken,
+                    refreshToken : refreshToken,
+                    userseqNo : userseqNo
+                  },
+                    success:function(data){
+                      if(data == 1){
+                        alert("가입 완료");	
+                        window.location = "/login"
+                     }
+                  }
+            })
+		})
+		
+		$("#authBtn").click(function() {
+			var tmpWindow = window.open("about:blank");
+			tmpWindow.location = "https://testapi.openbanking.or.kr/oauth/2.0/authorize?response_type=code&client_id=LNBP4fRC6v68zHtpW7swCv8J7mWn0wxF0isU3uY2&redirect_uri=http://localhost:3000/authResult&scope=login inquiry transfer&state=12345678901234567890123456789024&auth_type=0"
+		});
+    </script>
+    
+</body>
+
+</html>

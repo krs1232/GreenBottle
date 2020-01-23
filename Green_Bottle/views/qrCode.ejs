@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>GreenBottle | QR Code</title> 
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet">
+    <!-- Top Slider CSS -->
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">    
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style>
+      #close{
+        border:none;
+        margin-top:30px;
+      }
+    
+    </style>
+  </head>
+  <body>  
+ <!-- Start header section -->
+ <header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-top-area">
+              <!-- start header top left -->
+              <div class="aa-header-top-left">
+              <!-- / header top left -->
+              <div class="aa-header-top-right">
+                <ul class="aa-head-top-nav-right">
+                  <li><a href="help">Help</a></li>
+                  <li><a href="login">Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header top  -->
+
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+                <a href="main">
+                  <span class="fa fa-pagelines"></span>
+                  <p>Green<strong>Bottle</strong> <span>Return bottles and get money!</span></p>
+                </a>
+                <!-- img based logo -->
+                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+              </div>  
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- / header section -->
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>          
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="main">Home</a></li>
+              <li><a href="collect">회수내역</a></li>            
+              <li><a href="location">회수기위치</a></li>
+              <li><a href="help">도움말</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div> 
+      </div>
+    </div>
+  </section>
+  <!-- / menu -->  
+
+
+  <section id="aa-subscribe">
+    <div class="container">
+    <button id="close" type="button" >
+            <img src= "img/btn_back.png" width="50px"   border:none;/>
+    </button>    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-subscribe-area">
+            <h3>이용코드</h3><br>
+            <p>아래 코드를 기계에 인식시키세요.</p>
+            Take the code below close to the machine <br><br>
+            <div class="row text-center" style="display: inline-block;text-align: center;">
+              <button id="openDoorBtn" type="button" class="aa-browse-btn">Open</button>
+              <button id="closeDoorBtn"  class="aa-browse-btn" disabled="true">Close</button><br>
+              <br>
+                <div class="text-center">
+                  <div id="qrcode" class ="center-block" style="display: none; width:100%; text-align:center;"></div>
+                </div>
+              </div>
+            
+            </div>
+           
+            <div class="aa-prod-view-bottom text-center">
+    
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+  <!-- To Slider JS -->
+  <script src="js/sequence.js"></script>
+  <script src="js/sequence-theme.modern-slide-in.js"></script>  
+  <!-- Product view slider -->
+  <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+  <!-- QRcode js -->
+  <script src="js/qrcode.js"></script>
+
+  </body>
+
+  <script>
+    function bottleCountObject() {
+      var a = window.location.search.substr(1).split('&');
+      var val = {};
+      
+      if (a == "") return {};
+      var index = 0;
+      for (var i = 0; i < a.length; ++i) {
+          var key = a[i].split('=', 2);
+
+          if (key.length == 1)
+              val[index] = "";
+          else {
+              val[index] = decodeURIComponent(key[1].replace(/\+/g, " "));
+              index++;
+          }    
+
+      }
+      return val;
+    
+    }
+
+    // 리더기 오픈 
+    $('#openDoorBtn').click(function() {
+
+      document.getElementById('qrcode').style.display="block";
+      $.ajax({
+          url:'http://localhost:3000/qrCode',
+          type : 'POST',
+          success:function(data){        
+            $("#qrcode").removeAttr("title");
+            $("#qrcode").empty(); 
+            
+            new QRCode(document.getElementById("qrcode"), "(회원확인 완료) 문이 열렸습니다.(The door is opened.)");
+            $('#closeDoorBtn').attr('disabled', false);
+            $('.btn-space').remove();
+
+         }
+      })
+       
+    });
+
+    // 리더기 클로즈
+    $('#closeDoorBtn').click(function() {
+      $.ajax({
+          url:'http://localhost:3000/qrCode',
+          type : 'POST',
+          success:function(data){
+            $('#qrcode').removeAttr('title');
+            $('#qrcode').empty();
+            
+            new QRCode(document.getElementById("qrcode"), "문이 닫혔습니다.(The door is closed.)");
+            
+            $('.aa-prod-view-bottom').append(
+              '<button type="button" onClick="nextClick()" class="aa-browse-btn btn-space">Next</button>'
+            );
+            $('#closeDoorBtn').attr('disabled', true);
+
+         }
+      })
+    });
+
+    // 병 개수 디비 추가 및 accoutList.ejs 뷰 이동 함수 
+    function nextClick() {
+      var bottleCount = bottleCountObject();
+      var sojuCount = bottleCount[0];
+      var beerCount = bottleCount[1];
+      console.log('soju:' + sojuCount);
+      console.log('beer:' + beerCount);
+      $.ajax({
+        url : 'http://localhost:3000/insertBottle',
+        type : 'POST',
+        data : { 
+           sojuCount : sojuCount,
+           beerCount : beerCount
+        },
+        success : function(res) {
+            window.location = "/accountlist";
+        }
+
+      });
+
+    }
+    
+    
+    $('#close').click(function() {
+      var confirmAlert = confirm("뒤로 돌아가시겠습니까?");
+      if (confirmAlert) {
+        history.back();
+      } 
+    });
+
+    
+
+  </script>
+</html>
